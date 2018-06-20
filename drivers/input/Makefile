@@ -28,4 +28,8 @@ obj-$(CONFIG_INPUT_APMPOWER)	+= apm-power.o
 obj-$(CONFIG_INPUT_KEYRESET)	+= keyreset.o
 obj-$(CONFIG_INPUT_KEYCOMBO)	+= keycombo.o
 obj-$(CONFIG_SENSORS_HALL)	+= hall_sensor.o
+<<<<<<< HEAD
 obj-y	+= sensors/smi130/
+=======
+obj-y							+= fingerprint/
+>>>>>>> 0884128ae3dd... Kernel: Xiaomi kernel changes for Redmi S2
