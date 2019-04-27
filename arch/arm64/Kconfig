@@ -786,10 +786,26 @@ config SECCOMP
 	  and the task is only allowed to execute a few safe syscalls
 	  defined by each seccomp mode.
 
+config SPEAKER_EXT_PA
+	default y
+	bool "Speaker external PA"
+	help
+	  Support for external PA.
+
+config SPEAKER_EXT_PA_AW8738
+	default y
+	bool "Speaker external PA AW8738"
+	help
+	  Support for the AW8738.
+	  
 config XEN_DOM0
 	def_bool y
 	depends on XEN
 
+config YSL
+	bool "Based on Platform msm8917"
+	def_bool ARCH_MSM8917
+	
 config XEN
 	bool "Xen guest support on ARM64"
 	depends on ARM64 && OF
